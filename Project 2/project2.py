@@ -37,7 +37,7 @@ def get_place_category(lat, lon, api_key):
     return 'Unknown'
 
 def main():
-    filename = 'location-history.json'  # Replace with actual path
+    filename = 'location-history.json'
     api_key = '<ommited key from public repo>' 
     df = load_location_data(filename)
     df = cluster_locations(df)
